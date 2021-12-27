@@ -1,2 +1,2 @@
 # DuinoMine
- A balena projects that mines Duino-Coin!
+ A balena project that mines Duino-Coin!
