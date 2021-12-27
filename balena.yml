@@ -12,7 +12,7 @@ assets:
     type: blob.asset
     data:
       url: >-
-        https://raw.githubusercontent.com/cmumme/DuinoMine/main/assets/logo.svg
+        https://raw.githubusercontent.com/cmumme/DuinoMine/main/assets/duco.svg
 data:
   applicationEnvironmentVariables:
     - DUCO_USERNAME: CHANGE_THIS
@@ -23,4 +23,4 @@ data:
     - raspberrypi3-64
     - genericx86-64-ext
     - raspberrypi400-64
-version: 1.0.15
+version: 1.0.0
