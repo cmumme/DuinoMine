@@ -1,0 +1,26 @@
+name: DuinoMine
+description: >-
+  Raspberry-pi powered DuinoCoin mining!
+type: sw.application
+joinable: false
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/cmumme/DuinoMine'
+  logo:
+    type: blob.asset
+    data:
+      url: >-
+        https://raw.githubusercontent.com/cmumme/DuinoMine/main/assets/logo.svg
+data:
+  applicationEnvironmentVariables:
+    - DUCO_USERNAME: CHANGE_THIS
+  defaultDeviceType: raspberrypi4-64
+  supportedDeviceTypes:
+    - raspberrypi4-64
+    - raspberrypi3
+    - raspberrypi3-64
+    - genericx86-64-ext
+    - raspberrypi400-64
+version: 1.0.0
