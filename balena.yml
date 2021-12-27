@@ -20,9 +20,8 @@ data:
   supportedDeviceTypes:
     - raspberrypi4-64
     - raspberrypi3
-    - raspberrypi3
-    - raspberrypi
-    - raspberrypi2
+    - raspberry-pi
+    - raspberry-pi2
     - genericx86-64-ext
     - raspberrypi400-64
 version: 1.0.0
