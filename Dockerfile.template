@@ -1,0 +1,21 @@
+# Python image
+FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-stretch-run
+
+# Set our working directory
+WORKDIR /usr/src/app
+
+RUN apt-get update
+RUN install_packages python-dev build-essential
+
+
+# Copy dependencies.txt for caching purposes
+COPY dependencies.txt dependencies.txt
+
+# Install dependencies
+RUN pip install -r dependencies.txt
+
+# Copy all files to the container
+COPY . ./
+
+# Run DUCO
+CMD printf "$DUCO_USERNAME\n\n\n\n$BALENA_DEVICE_NAME_AT_INIT\n\n" | python "./duco-src/PC_Miner.py"
